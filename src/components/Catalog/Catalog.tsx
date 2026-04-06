@@ -1,52 +1,52 @@
 import { useState } from 'react';
-import { BadgeCheck, Package, Camera, Wrench, Headphones, ShoppingCart } from 'lucide-react';
+import { Package, BadgeCheck, Camera, Wrench, Headphones, ShoppingCart } from 'lucide-react';
 import CatalogCard from './CatalogCard';
 
 const paketCctv = [
   {
-    icon: <BadgeCheck className="w-5 h-5 text-blue-600" />,
+    icon: <Package className="w-5 h-5 text-blue-600" />,
     title: 'Paket CCTV 4 Channel',
     desc: '4 Kamera HD, DVR, kabel, adaptor, pemasangan & setting. Cocok untuk rumah/toko kecil. Termasuk instalasi, garansi 1 tahun, dan support remote monitoring.',
     price: 'Mulai Rp2.500.000',
-    image: '/src/assets/dok/paket-1.jpeg',
+    image: '/src/assets/catalog/paket-1.jpeg',
   },
   {
-    icon: <BadgeCheck className="w-5 h-5 text-blue-600" />,
+    icon: <Package className="w-5 h-5 text-blue-600" />,
     title: 'Paket CCTV 8 Channel',
     desc: '8 Kamera HD, DVR, kabel, adaptor, pemasangan & setting. Untuk kantor/ruko/small bisnis. Paket lengkap dengan pemasangan profesional dan pelatihan penggunaan.',
     price: 'Mulai Rp4.500.000',
-    image: '/src/assets/dok/paket-2.jpeg',
+    image: '/src/assets/catalog/paket-2.jpeg',
   },
   {
-    icon: <BadgeCheck className="w-5 h-5 text-blue-600" />,
+    icon: <Package className="w-5 h-5 text-blue-600" />,
     title: 'Paket CCTV 16 Channel',
     desc: '16 Kamera HD, DVR, kabel, adaptor, pemasangan & setting. Untuk big bisnis. Paket lengkap dengan pemasangan profesional dan pelatihan penggunaan.',
     price: 'Mulai Rp8.500.000',
-    image: '/src/assets/dok/paket-3.jpeg',
+    image: '/src/assets/catalog/paket-3.jpeg',
   },
 ];
 
 const produkSatuan = [
   {
-    icon: <Package className="w-5 h-5 text-blue-600" />,
+    icon: <BadgeCheck className="w-5 h-5 text-blue-600" />,
     title: 'Kamera CCTV HD',
     desc: 'Kamera CCTV indoor/outdoor, night vision, waterproof. Resolusi 2MP, IR hingga 20m, garansi 1 tahun.',
     price: 'Rp350.000',
-    image: '/src/assets/dok/camera-1.jpeg',
+    image: '/src/assets/catalog/camera.jpeg',
   },
   {
-    icon: <Package className="w-5 h-5 text-blue-600" />,
+    icon: <BadgeCheck className="w-5 h-5 text-blue-600" />,
     title: 'DVR 4/8/16 Channel',
     desc: 'DVR berbagai kapasitas, support remote monitoring. Mendukung berbagai merek kamera, mudah diintegrasikan.',
     price: 'Rp700.000',
-    image: '/src/assets/dok/dvr-1.jpeg',
+    image: '/src/assets/catalog/dvr.jpeg',
   },
   {
-    icon: <Package className="w-5 h-5 text-blue-600" />,
+    icon: <BadgeCheck className="w-5 h-5 text-blue-600" />,
     title: 'Harddisk CCTV',
     desc: 'Harddisk khusus CCTV, tahan panas & getaran. Kapasitas up to 4TB, cocok untuk rekaman 24 jam nonstop.',
     price: 'Rp650.000',
-    image: '/src/assets/dok/harddisk-1.jpg',
+    image: '/src/assets/catalog/harddisk.jpg',
   },
 ];
 
@@ -56,21 +56,21 @@ const jasaLayanan = [
     title: 'Jasa Instalasi CCTV',
     desc: 'Pemasangan profesional, rapi, dan bergaransi. Teknisi berpengalaman, pemasangan cepat dan rapi.',
     price: 'Mulai Rp350.000/titik',
-    image: '/src/assets/dok/instalasi.jpeg',
+    image: '/src/assets/catalog/instalasi.jpeg',
   },
   {
     icon: <Wrench className="w-5 h-5 text-blue-600" />,
     title: 'Maintenance & Perbaikan',
     desc: 'Perawatan rutin, perbaikan, dan upgrade sistem CCTV. Layanan on-call dan kontrak maintenance bulanan/tahunan.',
     price: 'Mulai Rp150.000',
-    image: '/src/assets/dok/maintenance.jpeg',
+    image: '/src/assets/catalog/maintenance.jpeg',
   },
   {
     icon: <Headphones className="w-5 h-5 text-blue-600" />,
     title: 'Survey & Konsultasi',
     desc: 'Survey lokasi & konsultasi kebutuhan CCTV GRATIS. Survey langsung ke lokasi dan rekomendasi solusi terbaik.',
     price: 'Gratis',
-    image: '/src/assets/dok/konsultasi.jpeg',
+    image: '/src/assets/catalog/konsultasi.jpeg',
   },
 ];
 

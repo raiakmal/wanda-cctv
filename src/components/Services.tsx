@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Wrench, Camera, Rocket, MapPin, ShieldCheck, Settings2 } from 'lucide-react';
 
-const layananImages = ['/src/assets/dok/service-1.jpeg', '/src/assets/dok/service-2.jpeg', '/src/assets/dok/service-3.jpeg'];
+const layananImages = ['/src/assets/services/service-1.jpeg', '/src/assets/services/service-2.jpeg', '/src/assets/services/service-3.jpeg'];
 
 const serviceItems = [
   {
