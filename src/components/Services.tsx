@@ -73,26 +73,26 @@ const Services = () => {
               <p className="text-gray-600 max-w-md mb-6 text-sm sm:text-base">Kami menyediakan berbagai layanan profesional untuk memastikan sistem keamanan Anda selalu optimal, mulai dari pemasangan hingga perawatan dan pengembangan.</p>
             </div>
             {/* Stack Images - Desktop/Tablet */}
-            <div className="relative w-full hidden md:block mt-2 h-[260px] sm:h-[320px] md:h-[400px]">
+            <div className="relative w-full hidden md:block mt-2 h-[260px] sm:h-[320px] md:h-[400px] group">
               {/* Gambar belakang kiri (prev) */}
               <img
                 src={layananImages[getStackIndexes()[0]]}
                 alt="Layanan CCTV prev"
-                className={`absolute left-6 sm:left-10 top-6 sm:top-10 w-8/12 sm:w-9/12 h-full rounded-2xl shadow-md object-cover z-10 blur-sm rotate-12 ${fadeClass}`}
+                className={`absolute left-6 sm:left-10 top-6 sm:top-10 w-8/12 sm:w-9/12 h-full rounded-2xl shadow-md object-cover z-10 blur-sm rotate-12 group-hover:scale-105 transition-transform duration-500 ${fadeClass}`}
                 style={{ objectPosition: 'center' }}
               />
               {/* Gambar depan (current) */}
               <img
                 src={layananImages[getStackIndexes()[1]]}
                 alt="Layanan CCTV utama"
-                className={`absolute left-0 top-0 w-8/12 sm:w-9/12 h-full rounded-2xl shadow-md shadow-blue-500 object-cover z-30 border-2 border-blue-500 ${fadeClass}`}
+                className={`absolute left-0 top-0 w-8/12 sm:w-9/12 h-full rounded-2xl shadow-lg group-hover:shadow-blue-600 object-cover z-30 group-hover:scale-105 transition-transform transition-shadow duration-500 ${fadeClass}`}
                 style={{ objectPosition: 'center' }}
               />
               {/* Gambar belakang kanan (next) */}
               <img
                 src={layananImages[getStackIndexes()[2]]}
                 alt="Layanan CCTV next"
-                className={`absolute left-4 sm:left-8 top-4 sm:top-8 w-8/12 sm:w-9/12 h-full rounded-2xl shadow object-cover z-20 blur-xs rotate-4 ${fadeClass}`}
+                className={`absolute left-4 sm:left-8 top-4 sm:top-8 w-8/12 sm:w-9/12 h-full rounded-2xl shadow object-cover z-20 blur-xs rotate-4 group-hover:scale-105 transition-transform duration-500 ${fadeClass}`}
                 style={{ objectPosition: 'center' }}
               />
             </div>
@@ -108,29 +108,36 @@ const Services = () => {
             ))}
             {/* Stack Images - Mobile */}
             <div
-              className="flex md:hidden w-full mt-4 relative"
+              className="md:hidden flex justify-center items-center w-full mt-4 relative group"
               style={{
-                aspectRatio: '3 / 4',
-                width: 'min(90vw, 320px)',
+                width: '100%',
                 maxWidth: '320px',
                 minWidth: '180px',
+                aspectRatio: '9 / 12',
                 height: 'auto',
+                marginLeft: 'auto',
+                marginRight: 'auto',
               }}
             >
               {/* Gambar belakang kiri (prev) */}
-              <img src={layananImages[getStackIndexes()[0]]} alt="Layanan CCTV prev" className={`absolute left-8 top-8 w-2/3 h-full rounded-xl shadow object-cover blur-sm rotate-12 z-10 ${fadeClass}`} style={{ objectPosition: 'center' }} />
+              <img
+                src={layananImages[getStackIndexes()[0]]}
+                alt="Layanan CCTV prev"
+                className={`absolute left-6 top-6 w-9/12 h-full rounded-2xl shadow-md object-cover z-10 blur-sm rotate-12 transition-all duration-500 group-hover:-translate-x-2 group-hover:-translate-y-2 group-hover:scale-105 ${fadeClass}`}
+                style={{ objectPosition: 'center' }}
+              />
               {/* Gambar depan (current) */}
               <img
                 src={layananImages[getStackIndexes()[1]]}
                 alt="Layanan CCTV utama"
-                className={`absolute left-0 top-0 w-2/3 h-full rounded-xl shadow-xl shadow-blue-500 object-cover border-2 border-blue-600 z-30 ${fadeClass}`}
+                className={`absolute left-0 top-0 w-9/12 h-full rounded-2xl shadow-lg shadow-blue-600 object-cover z-30 border-2 border-blue-500 transition-all duration-500 group-hover:scale-105 group-hover:shadow-xl group-hover:-translate-y-2 ${fadeClass}`}
                 style={{ objectPosition: 'center' }}
               />
               {/* Gambar belakang kanan (next) */}
               <img
                 src={layananImages[getStackIndexes()[2]]}
                 alt="Layanan CCTV next"
-                className={`absolute left-6 top-6 w-2/3 h-full rounded-xl shadow object-cover blur-sm rotate-4 z-20 transition-all duration-500 ${fadeClass}`}
+                className={`absolute left-4 top-4 w-9/12 h-full rounded-2xl shadow object-cover z-20 blur-xs rotate-4 transition-all duration-500 group-hover:translate-x-2 group-hover:translate-y-2 group-hover:scale-105 ${fadeClass}`}
                 style={{ objectPosition: 'center' }}
               />
             </div>
