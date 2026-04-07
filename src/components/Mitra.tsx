@@ -22,7 +22,7 @@ const Mitra = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-2 mb-2">
-            <Handshake className="w-8 sm:w-10 h-8 sm:h-10 text-blue-600" />
+            <Handshake className="w-8 h-8 text-blue-600" />
             <h2 className="text-xl sm:text-3xl font-bold text-gray-900 font-sans m-0">Dipercaya oleh Berbagai Perusahaan</h2>
           </div>
           <p className="text-blue-600 text-base sm:text-lg font-semibold">Beberapa mitra & klien yang telah bekerja sama dengan kami</p>

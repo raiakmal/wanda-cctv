@@ -1,33 +1,33 @@
-import { UserCheck, Clock, BadgeDollarSign, Wrench, Smartphone, Headphones, ShieldCheck, Lock } from 'lucide-react';
+import { UserCheck, Clock, BadgeDollarSign, Wrench, Smartphone, Headphones, ShieldCheck } from 'lucide-react';
 
 const featureItems = [
   {
-    icon: <UserCheck className="w-8 h-8 text-blue-600" />,
+    icon: <UserCheck className="w-6 h-6 text-blue-600" />,
     title: 'Teknisi Berpengalaman & Profesional',
     desc: 'Dikerjakan langsung oleh tim ahli yang sudah berpengalaman menangani berbagai jenis instalasi CCTV, mulai dari rumah hingga skala bisnis.',
   },
   {
-    icon: <Clock className="w-8 h-8 text-blue-600" />,
+    icon: <Clock className="w-6 h-6 text-blue-600" />,
     title: 'Proses Cepat & Tepat Waktu',
     desc: 'Kami memahami pentingnya keamanan, setiap pemasangan dilakukan dengan cepat tanpa mengorbankan kualitas.',
   },
   {
-    icon: <BadgeDollarSign className="w-8 h-8 text-blue-600" />,
+    icon: <BadgeDollarSign className="w-6 h-6 text-blue-600" />,
     title: 'Harga Transparan & Terjangkau',
     desc: 'Tidak ada biaya tersembunyi. Semua harga kami jelaskan di awal, sehingga Anda bisa menyesuaikan dengan kebutuhan dan budget.',
   },
   {
-    icon: <Wrench className="w-8 h-8 text-blue-600" />,
+    icon: <Wrench className="w-6 h-6 text-blue-600" />,
     title: 'Garansi & Layanan Purna Jual',
     desc: 'Kami memberikan garansi pemasangan serta dukungan teknis jika terjadi kendala setelah instalasi.',
   },
   {
-    icon: <Smartphone className="w-8 h-8 text-blue-600" />,
+    icon: <Smartphone className="w-6 h-6 text-blue-600" />,
     title: 'Monitoring Mudah dari Smartphone',
     desc: 'Pantau kondisi rumah atau bisnis Anda kapan saja dan di mana saja langsung dari HP.',
   },
   {
-    icon: <Headphones className="w-8 h-8 text-blue-600" />,
+    icon: <Headphones className="w-6 h-6 text-blue-600" />,
     title: 'Support & Konsultasi 24 Jam',
     desc: 'Tim kami siap membantu Anda kapan saja, mulai dari konsultasi hingga penanganan masalah.',
   },
@@ -38,11 +38,10 @@ const Features = () => (
     <div className="max-w-5xl mx-auto px-4">
       <div className="text-center mb-8 sm:mb-10">
         <div className="flex justify-center mb-2">
-          <ShieldCheck className="w-10 h-10 text-blue-600" />
+          <ShieldCheck className="w-8 h-8 text-blue-600" />
         </div>
         <h2 className="text-xl xs:text-2xl sm:text-3xl font-bold text-gray-900 mb-2 font-sans">Keunggulan Kami</h2>
         <div className="flex justify-center items-center gap-2 mb-2">
-          <Lock className="hidden sm:flex w-5 h-5 text-blue-600" />
           <p className="text-blue-600 text-base sm:text-lg font-semibold">Solusi Keamanan yang Bisa Anda Percaya</p>
         </div>
         <p className="text-gray-600 max-w-xl mx-auto text-sm sm:text-base">Kami hadir untuk memberikan perlindungan maksimal bagi rumah dan bisnis Anda dengan layanan CCTV profesional, cepat, dan terpercaya.</p>

@@ -1,26 +1,26 @@
 import { useState, useEffect, useRef } from 'react';
-import { Wrench, Camera, Rocket, MapPin, ShieldCheck, Settings2 } from 'lucide-react';
+import { Wrench, Camera, Rocket, MapPin, Settings2 } from 'lucide-react';
 
 const layananImages = ['/src/assets/services/service-1.jpeg', '/src/assets/services/service-2.jpeg', '/src/assets/services/service-3.jpeg'];
 
 const serviceItems = [
   {
-    icon: <Camera className="w-8 h-8 text-blue-600" />,
+    icon: <Camera className="w-6 h-6 text-blue-600" />,
     title: 'Instalasi CCTV',
     desc: 'Kami melayani pemasangan CCTV untuk rumah, toko, kantor, hingga area industri. Dikerjakan oleh teknisi berpengalaman dengan hasil rapi, aman, dan siap digunakan.',
   },
   {
-    icon: <Wrench className="w-8 h-8 text-blue-600" />,
+    icon: <Wrench className="w-6 h-6 text-blue-600" />,
     title: 'Maintenance CCTV',
     desc: 'Pastikan sistem CCTV Anda selalu dalam kondisi terbaik. Kami menyediakan layanan perawatan rutin dan perbaikan untuk menghindari gangguan atau kerusakan.',
   },
   {
-    icon: <Rocket className="w-8 h-8 text-blue-600" />,
+    icon: <Rocket className="w-6 h-6 text-blue-600" />,
     title: 'Upgrade Sistem',
     desc: 'Ingin kualitas gambar lebih jernih atau fitur lebih canggih? Kami siap membantu upgrade sistem CCTV Anda ke teknologi terbaru sesuai kebutuhan.',
   },
   {
-    icon: <MapPin className="w-8 h-8 text-blue-600" />,
+    icon: <MapPin className="w-6 h-6 text-blue-600" />,
     title: 'Survey Lokasi',
     desc: 'Kami menyediakan layanan survey langsung ke lokasi untuk menentukan titik pemasangan terbaik, sehingga hasil instalasi lebih maksimal dan efisien.',
   },
@@ -63,11 +63,10 @@ const Services = () => {
           <div className="md:w-5/12 flex flex-col items-start">
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <Settings2 className="w-8 sm:w-10 h-8 sm:h-10 text-blue-600" />
+                <Settings2 className="w-8 h-8 text-blue-600" />
                 <span className="text-lg sm:text-2xl md:text-3xl font-bold text-gray-900 font-sans">Layanan Kami</span>
               </div>
               <div className="flex items-center gap-2 mb-2">
-                <ShieldCheck className="hidden sm:flex w-5 h-5 text-blue-600" />
                 <span className="text-blue-600 text-base sm:text-lg font-semibold">Solusi Lengkap untuk Kebutuhan CCTV Anda</span>
               </div>
               <p className="text-gray-600 max-w-md mb-6 text-sm sm:text-base">Kami menyediakan berbagai layanan profesional untuk memastikan sistem keamanan Anda selalu optimal, mulai dari pemasangan hingga perawatan dan pengembangan.</p>

@@ -88,7 +88,7 @@ const Catalog = () => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-2 mb-2">
-            <ShoppingCart className="w-8 sm:w-10 h-8 sm:h-10 text-blue-600" />
+            <ShoppingCart className="w-8 h-8 text-blue-600" />
             <h2 className="text-xl sm:text-3xl font-bold text-gray-900 font-sans m-0">Katalog Kami</h2>
           </div>
           <p className="text-blue-600 text-base sm:text-lg font-semibold">Pilih Paket, Produk, atau Jasa Sesuai Kebutuhan Anda</p>
