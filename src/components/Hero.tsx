@@ -43,29 +43,42 @@ const HeroCarousel = () => {
             <h1 className="text-lg xs:text-lg sm:text-xl md:text-4xl font-bold text-white drop-shadow mb-2 sm:mb-4 font-sans">{slide.title}</h1>
             <p className="text-xs sm:text-base md:text-lg text-white/90 mb-4 sm:mb-6 font-sans">{slide.desc}</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="#katalog" className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-blue-600 text-white text-sm sm:text-base font-medium hover:bg-blue-700 transition">
+              <button
+                type="button"
+                onClick={() => (window.location.hash = '#katalog')}
+                className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-blue-600 text-white text-sm sm:text-base font-medium hover:bg-blue-700 transition cursor-pointer"
+              >
                 Hubungi Kami
-              </a>
-              <a href="#kontak" className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white text-blue-600 border border-blue-600 text-sm sm:text-base font-medium hover:bg-gray-300 transition">
+              </button>
+              <button
+                type="button"
+                onClick={() => (window.location.hash = '#kontak')}
+                className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white text-blue-600 border border-blue-600 text-sm sm:text-base font-medium hover:bg-gray-200 transition cursor-pointer"
+              >
                 Lihat Katalog
-              </a>
+              </button>
             </div>
           </div>
         </div>
       ))}
 
       {/* Panah navigasi */}
-      <button onClick={prevSlide} className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white shadow rounded-full p-2 transition z-20" aria-label="Sebelumnya">
+      <button onClick={prevSlide} className="hidden sm:flex absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white shadow rounded-full p-2 transition z-20 cursor-pointer" aria-label="Sebelumnya">
         <ChevronLeft className="w-6 h-6 text-blue-600" />
       </button>
-      <button onClick={nextSlide} className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white shadow rounded-full p-2 transition z-20" aria-label="Selanjutnya">
+      <button onClick={nextSlide} className="hidden sm:flex absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white shadow rounded-full p-2 transition z-20 cursor-pointer" aria-label="Selanjutnya">
         <ChevronRight className="w-6 h-6 text-blue-600" />
       </button>
 
       {/* Indikator bulat */}
       <div className="hidden sm:flex absolute bottom-6 left-1/2 -translate-x-1/2 space-x-2 z-20">
         {slides.map((_, idx) => (
-          <button key={idx} onClick={() => setCurrent(idx)} className={`w-3 h-3 rounded-full border-2 ${idx === current ? 'bg-blue-600 border-blue-600' : 'bg-white border-white'} transition`} aria-label={`Slide ${idx + 1}`} />
+          <button
+            key={idx}
+            onClick={() => setCurrent(idx)}
+            className={`w-3 h-3 rounded-full border-2 ${idx === current ? 'bg-blue-600 border-blue-600' : 'bg-white border-white'} transition cursor-pointer`}
+            aria-label={`Slide ${idx + 1}`}
+          />
         ))}
       </div>
     </section>

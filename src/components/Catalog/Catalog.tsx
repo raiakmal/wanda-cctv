@@ -115,9 +115,9 @@ const Catalog = () => {
         </div>
         {/* CTA Section */}
         <div className="flex justify-center mt-10">
-          <a href="#kontak" className="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold text-base shadow hover:bg-blue-700 transition">
+          <button type="button" onClick={() => (window.location.hash = '#kontak')} className="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold text-base shadow hover:bg-blue-700 transition">
             Konsultasi & Pesan Sekarang
-          </a>
+          </button>
         </div>
       </div>
     </section>

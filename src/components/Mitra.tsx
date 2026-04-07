@@ -20,7 +20,6 @@ const Mitra = () => {
   return (
     <section className="py-10 sm:py-14 bg-gray-100" id="mitra">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Heading */}
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-2 mb-2">
             <Handshake className="w-8 sm:w-10 h-8 sm:h-10 text-blue-600" />

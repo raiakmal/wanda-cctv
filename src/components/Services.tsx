@@ -72,6 +72,16 @@ const Services = () => {
               </div>
               <p className="text-gray-600 max-w-md mb-6 text-sm sm:text-base">Kami menyediakan berbagai layanan profesional untuk memastikan sistem keamanan Anda selalu optimal, mulai dari pemasangan hingga perawatan dan pengembangan.</p>
             </div>
+            {/* CTA */}
+            <div className="flex justify-center mb-4">
+              <button
+                type="button"
+                onClick={() => (window.location.hash = '#kontak')}
+                className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white text-blue-600 border border-blue-600 text-sm sm:text-base font-medium hover:bg-gray-200 transition cursor-pointer"
+              >
+                Hubungi Kami
+              </button>
+            </div>
             {/* Stack Images - Desktop/Tablet */}
             <div className="relative w-full hidden md:block mt-2 h-[260px] sm:h-[320px] md:h-[400px] group">
               {/* Gambar belakang kiri (prev) */}
