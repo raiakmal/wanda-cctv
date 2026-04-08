@@ -80,11 +80,14 @@ const tabs = [
   { label: 'Jasa Layanan', data: jasaLayanan },
 ];
 
+const waNumber = '6285244553004';
+const waTemplate = encodeURIComponent('Halo, saya ingin konsultasi dan pesan produk/jasa CCTV dari Wanda CCTV.');
+
 const Catalog = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="py-10 sm:py-14 bg-white" id="katalog">
+    <section className="py-10 sm:py-14 bg-white" id="catalog">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-2 mb-2">
@@ -115,9 +118,20 @@ const Catalog = () => {
         </div>
         {/* CTA Section */}
         <div className="flex justify-center mt-10">
-          <button type="button" onClick={() => (window.location.hash = '#kontak')} className="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold text-base shadow hover:bg-blue-700 transition">
+          <a
+            href={`https://wa.me/${waNumber}?text=${waTemplate}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold text-base shadow transition flex items-center gap-2"
+          >
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M16 3C9.372 3 4 8.372 4 15c0 2.385.832 4.584 2.236 6.364L4 29l7.818-2.236A11.94 11.94 0 0 0 16 27c6.628 0 12-5.372 12-12S22.628 3 16 3zm0 22c-1.89 0-3.68-.52-5.192-1.418l-.37-.22-4.648 1.33 1.33-4.648-.22-.37A9.956 9.956 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.27-7.03c-.288-.144-1.7-.84-1.963-.936-.263-.096-.454-.144-.646.144-.192.288-.74.936-.907 1.128-.168.192-.335.216-.623.072-.288-.144-1.216-.448-2.32-1.429-.858-.765-1.437-1.71-1.607-1.998-.168-.288-.018-.444.126-.588.13-.13.288-.336.432-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.646-1.56-.884-2.142-.232-.558-.468-.48-.646-.489l-.552-.01c-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.4 0 1.416 1.032 2.784 1.176 2.976.144.192 2.032 3.12 4.928 4.248.688.297 1.224.474 1.642.606.69.22 1.32.189 1.818.115.555-.082 1.7-.693 1.94-1.362.24-.669.24-1.243.168-1.362-.072-.12-.264-.192-.552-.336z"
+                fill="#fff"
+              />
+            </svg>
             Konsultasi & Pesan Sekarang
-          </button>
+          </a>
         </div>
       </div>
     </section>

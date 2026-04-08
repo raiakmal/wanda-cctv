@@ -56,7 +56,7 @@ const Services = () => {
   const fadeClass = fade ? 'opacity-100 transition-opacity duration-500' : 'opacity-0 transition-opacity duration-500';
 
   return (
-    <section className="py-10 sm:py-14 bg-gray-50" id="layanan">
+    <section className="py-10 sm:py-14 bg-gray-50" id="services">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-stretch gap-8">
           {/* Kiri: Judul & Gambar Stack */}
@@ -75,7 +75,7 @@ const Services = () => {
             <div className="flex justify-center mb-4">
               <button
                 type="button"
-                onClick={() => (window.location.hash = '#kontak')}
+                onClick={() => (window.location.hash = '#contact')}
                 className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white text-blue-600 border border-blue-600 text-sm sm:text-base font-medium hover:bg-gray-200 transition cursor-pointer"
               >
                 Hubungi Kami

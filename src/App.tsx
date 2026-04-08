@@ -6,7 +6,8 @@ import Services from './components/Services';
 import Catalog from './components/Catalog/Catalog';
 import Mitra from './components/Mitra';
 import Gallery from './components/Gallery';
-import Contact from './components/Contack';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Mitra />
       <Gallery />
       <Contact />
-      <h1 className="text-3xl font-bold">Font Poppins aktif 🚀</h1>
+      <Footer />
     </>
   );
 }

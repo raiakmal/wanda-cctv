@@ -19,6 +19,15 @@ const slides = [
   },
 ];
 
+// Fungsi scroll dengan offset
+const scrollToSectionWithOffset = (id: string, offset = 58) => {
+  const el = document.querySelector(id);
+  if (el) {
+    const y = (el as HTMLElement).getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+};
+
 const HeroCarousel = () => {
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -45,14 +54,14 @@ const HeroCarousel = () => {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <button
                 type="button"
-                onClick={() => (window.location.hash = '#katalog')}
+                onClick={() => scrollToSectionWithOffset('#contact')}
                 className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-blue-600 text-white text-sm sm:text-base font-medium hover:bg-blue-700 transition cursor-pointer"
               >
                 Hubungi Kami
               </button>
               <button
                 type="button"
-                onClick={() => (window.location.hash = '#kontak')}
+                onClick={() => scrollToSectionWithOffset('#catalog')}
                 className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white text-blue-600 border border-blue-600 text-sm sm:text-base font-medium hover:bg-gray-200 transition cursor-pointer"
               >
                 Lihat Katalog

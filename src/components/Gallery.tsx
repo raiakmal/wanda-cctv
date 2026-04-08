@@ -36,7 +36,7 @@ const Gallery = () => {
   const visiblePhotos = showAll ? photos : photos.slice(0, 8);
 
   return (
-    <section className="py-12 sm:py-16 bg-gradient-to-b from-white to-gray-50" id="galeri">
+    <section className="py-12 sm:py-16 bg-gradient-to-b from-white to-gray-50" id="gallery">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
           <div className="flex justify-center items-center gap-2 mb-2">

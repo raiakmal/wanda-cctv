@@ -34,7 +34,7 @@ const featureItems = [
 ];
 
 const Features = () => (
-  <section className="py-10 sm:py-14 bg-white" id="keunggulan">
+  <section className="py-10 sm:py-14 bg-white" id="features">
     <div className="max-w-5xl mx-auto px-4">
       <div className="text-center mb-8 sm:mb-10">
         <div className="flex justify-center mb-2">
