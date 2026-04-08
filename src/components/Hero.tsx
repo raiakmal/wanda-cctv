@@ -5,17 +5,17 @@ const slides = [
   {
     title: 'Solusi CCTV Terbaik untuk Rumah & Bisnis Anda',
     desc: 'Pantau keamanan properti Anda kapan saja dan di mana saja dengan layanan pemasangan CCTV profesional.',
-    img: '/src/assets/hero/hero-1.jpg',
+    img: '/hero/hero-1.jpg',
   },
   {
     title: 'Jasa Pasang CCTV Bergaransi',
     desc: 'Dapatkan instalasi rapi, harga transparan, dan support after sales terbaik dari tim kami.',
-    img: '/src/assets/hero/hero-2.jpg',
+    img: '/hero/hero-2.jpg',
   },
   {
     title: 'Katalog Produk CCTV Terlengkap',
     desc: 'Pilih berbagai tipe kamera dan paket sesuai kebutuhan Anda, konsultasi gratis!',
-    img: '/src/assets/hero/hero-3.jpg',
+    img: '/hero/hero-3.jpg',
   },
 ];
 

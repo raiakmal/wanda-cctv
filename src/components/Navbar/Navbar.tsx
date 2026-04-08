@@ -46,7 +46,7 @@ const Navbar = () => {
             style={{ background: 'none' }}
             aria-label="Ke Beranda"
           >
-            <img src="/src/assets/logo.png" alt="Wanda CCTV" className="w-10 h-10" />
+            <img src="/logo.png" alt="Wanda CCTV" className="w-10 h-10" />
             <span className="hidden sm:block text-xl font-bold text-blue-600 tracking-wide">Wanda CCTV</span>
           </button>
 

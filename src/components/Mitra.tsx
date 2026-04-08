@@ -1,15 +1,15 @@
 import { Handshake } from 'lucide-react';
 
 const logos = [
-  '/src/assets/mitra/logo-dahua.png',
-  '/src/assets/mitra/logo-hikvision.png',
-  '/src/assets/mitra/logo-hilook.png',
-  '/src/assets/mitra/logo-ezviz.png',
-  '/src/assets/mitra/logo-hikvision.png',
-  '/src/assets/mitra/logo-hilook.png',
-  '/src/assets/mitra/logo-dahua.png',
-  '/src/assets/mitra/logo-hikvision.png',
-  '/src/assets/mitra/logo-ezviz.png',
+  '/mitra/logo-dahua.png',
+  '/mitra/logo-hikvision.png',
+  '/mitra/logo-hilook.png',
+  '/mitra/logo-ezviz.png',
+  '/mitra/logo-hikvision.png',
+  '/mitra/logo-hilook.png',
+  '/mitra/logo-dahua.png',
+  '/mitra/logo-hikvision.png',
+  '/mitra/logo-ezviz.png',
 ];
 
 const Mitra = () => {
